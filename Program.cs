@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular expression");
-            FirstName firstName = new FirstName();
+            LastName firstName = new LastName();
             Console.WriteLine("please enter the pattern");
             string name = Console.ReadLine();
 
