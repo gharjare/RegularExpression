@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RegularExpressionProblem
 {
-    public class MobNumber
+    public class Password
     {
-        public static string Regex_PhoneNumber = "^(91)[6-9]{1}[0-9]{9}$";
-
-        public bool ValidateNumber(string number)
+        
+        public static string Regex_Numeric = "((?=.*[A-Z])(?=.*[0-9]).{8,})";
+        public bool ValidateNumeric(string Numeric)
         {
-            return Regex.IsMatch(number, Regex_PhoneNumber);
+            return Regex.IsMatch(Numeric, Regex_Numeric);
         }
     }
 }
