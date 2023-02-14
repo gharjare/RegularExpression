@@ -5,11 +5,11 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular expression");
-            LastName firstName = new LastName();
+            EmailPattern pattern = new EmailPattern();
             Console.WriteLine("please enter the pattern");
-            string name = Console.ReadLine();
+            string email = Console.ReadLine();
 
-            bool value = firstName.ValidateName(name);
+            bool value = pattern.ValidateEmail(email);
 
             if (value)
             {
