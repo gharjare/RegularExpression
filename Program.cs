@@ -6,11 +6,12 @@
         {
             Console.WriteLine("Welcome to Regular expression");
 
-            UpperCase upperCase = new UpperCase();
-            Console.WriteLine("please enter the pattern");
-            string Upper = Console.ReadLine();
+            NuminPass password = new NuminPass();
 
-            bool value = upperCase.ValidateUpper(Upper);
+            Console.WriteLine("please enter the pattern");
+            string Numeric = Console.ReadLine();
+
+            bool value = password.ValidateNumeric(Numeric);
 
             if (value)
             {

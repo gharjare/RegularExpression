@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RegularExpressionProblem
 {
-    public class UpperCase
+    public class NuminPass
     {
 
-        public static string Regex_Upper = "((?=.*[A-Z]).{8,})";
-        public bool ValidateUpper(string Upper)
+        public static string Regex_Numeric = "((?=.*[A-Z])(?=.*[0-9]).{8,})";
+        public bool ValidateNumeric(string Numeric)
         {
-            return Regex.IsMatch(Upper, Regex_Upper);
+            return Regex.IsMatch(Numeric, Regex_Numeric);
         }
     }
 }
