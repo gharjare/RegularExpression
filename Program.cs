@@ -6,12 +6,11 @@
         {
             Console.WriteLine("Welcome to Regular expression");
 
-            NuminPass password = new NuminPass();
-
+            SpecialCharacter specialCharacter = new SpecialCharacter();
             Console.WriteLine("please enter the pattern");
-            string Numeric = Console.ReadLine();
+            string Character = Console.ReadLine();
 
-            bool value = password.ValidateNumeric(Numeric);
+            bool value = specialCharacter.ValidateCharacter(Character);
 
             if (value)
             {
