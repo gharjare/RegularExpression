@@ -5,11 +5,12 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular expression");
-            Password pattern = new Password();
-            Console.WriteLine("please enter the pattern");
-            string password = Console.ReadLine();
 
-            bool value = pattern.ValidateNumeric(password);
+            UpperCase upperCase = new UpperCase();
+            Console.WriteLine("please enter the pattern");
+            string Upper = Console.ReadLine();
+
+            bool value = upperCase.ValidateUpper(Upper);
 
             if (value)
             {
