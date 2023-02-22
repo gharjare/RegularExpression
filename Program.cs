@@ -9,10 +9,10 @@
             UserDetails user = new UserDetails();
             //UC1
             Console.WriteLine("please enter Firstname");
-            string firstName = Console.ReadLine();
-            bool Fname = user.ValidateFirstname(firstName);
-            if (Fname)
-                Console.WriteLine("firstname Matched");
+            List<string> firstName = new List<string>() { "kiran" };
+            bool fname = user.ValidateFirstName(firstName);
+            if (fname)
+                Console.WriteLine("Firstname Matched");
             else
                 Console.WriteLine("FirstName not matched");
             //UC2
